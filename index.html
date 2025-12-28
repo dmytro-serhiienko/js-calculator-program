@@ -3,22 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- remixicon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <div id="calculator">
+      <div class="elements" id="js-elements"></div>
+
       <input id="display" readonly />
       <div id="keys">
-        <a class="social" href="#">GitHub</a>
-        <a class="social" href="#">LinkedIn</a>
-        <a class="social" href="#">button</a>
+        <a
+          class="social"
+          href="https://github.com/dmytro-serhiienko"
+          target="_blank"
+          ><i class="ri-github-line"></i
+        ></a>
+        <a
+          class="social"
+          href="https://www.linkedin.com/in/dmytro-serhiienko-3561a0373/"
+          target="_blank"
+          ><i class="ri-linkedin-fill"></i
+        ></a>
+        <a class="social" href="#"></a>
 
         <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
         <button onclick="appendToDisplay('7')">7</button>
         <button onclick="appendToDisplay('8')">8</button>
         <button onclick="appendToDisplay('9')">9</button>
-        <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+        <button onclick="appendToDisplay('*')" class="operator-btn multiply">
+          <i class="ri-asterisk"></i>
+        </button>
         <button onclick="appendToDisplay('4')">4</button>
         <button onclick="appendToDisplay('5')">5</button>
         <button onclick="appendToDisplay('6')">6</button>
