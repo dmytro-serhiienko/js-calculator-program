@@ -1,3 +1,4 @@
+//? Calc
 const display = document.querySelector("#display");
 
 function appendToDisplay(input) {
