@@ -14,9 +14,13 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="elements" id="js-elements">
+      <i class="ri-calculator-line elem calculator"></i>
+      <i class="ri-formula elem formula"></i>
+      <i class="ri-infinity-line elem infinity"></i>
+      <i class="ri-functions elem functions"></i>
+    </div>
     <div id="calculator">
-      <div class="elements" id="js-elements"></div>
-
       <input id="display" readonly />
       <div id="keys">
         <a
@@ -55,6 +59,11 @@
       </div>
     </div>
 
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
     <script src="./js/main.js"></script>
+    <script src="./js/elements.js"></script>
   </body>
 </html>
